@@ -1,0 +1,24 @@
+// || Colors
+$backgroundColor: #191E21;
+$fontColor:#E3D5BB ;
+$additionColor: #af2523;
+
+.main_container{
+    width: 100%;
+    height: 10dvh;
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    .line{
+        width: 80%;
+        height: 2px;
+        background-color: aqua;
+    }
+    .copyright{
+        display: flex;
+        color: white;
+    }
+}

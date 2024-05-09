@@ -1,0 +1,263 @@
+// || Colors
+$backgroundColor: #191E21;
+$fontColor:#E3D5BB ;
+$additionColor: #af2523;
+
+.main_container{
+    width: 100%;
+    height: 800px;
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    .title{
+        border-bottom: 5px solid aqua;
+        border-radius: 0px 10px;
+        p{
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+    .Skills{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: LeftAnimation;
+        animation-duration: 0.3s;
+        .Skills_container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1300px;
+            gap: 20px;
+            .Description{
+                width: 875px;
+                height: 220px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+                z-index: 10;
+                p{
+                    color: white;
+                    font-size: 20px;
+                    i{
+                        color: aqua;
+                    }
+                }
+                .Border_left{
+                    width: 960px;
+                    height: 300px;
+                    position: absolute;
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                    z-index: 1;
+                    .border{
+                        width: 100px;
+                        height: 100px;
+                        border-left: 2px solid white;
+                        border-top: 2px solid white;
+                        animation-name: borderAnimation;
+                        animation-duration: 2s;
+                        animation-direction: alternate;
+                        animation-iteration-count: infinite;
+                    }
+                }
+                .Border_Right{
+                    width: 960px;
+                    height: 300px;
+                    position: absolute;
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+                    z-index: 2;
+                    .border{
+                        width: 100px;
+                        height: 100px;
+                        border-right:2px solid white ;
+                        border-bottom: 2px solid white;
+                        animation-name: borderAnimation;
+                        animation-duration: 2s;
+                        animation-direction: alternate;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes LeftAnimation{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes borderAnimation{
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:1330px){
+    .main_container{
+        height: 1100px;
+        .Skills{
+            .Skills_container{
+                justify-content: center;
+            }
+        }
+    }
+}
+@media screen and (max-width:1010px){
+    .main_container{
+        height: auto;
+        .Skills{
+            .Skills_container{
+                .Description{
+                    width: 700px;
+                    .Border_left{
+                        width: 765px;
+                    }
+                    .Border_Right{
+                        width: 765px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:957px){
+    .main_container{
+        height: 180dvh;
+    }
+}
+@media screen and (max-width:800px){
+    .main_container{
+        .Skills{
+            .Skills_container{
+                .Description{
+                    width: 600px;
+                    .Border_left{
+                        width: 675px;
+                    }
+                    .Border_Right{
+                        width: 675px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:710px){
+    .main_container{
+        .Skills{
+            .Skills_container{
+                .Description{
+                    width: 500px;
+                    .Border_left{
+                        width: 575px;
+                    }
+                    .Border_Right{
+                        width: 575px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:632px){
+    .main_container{
+        height: 270dvh;
+    }
+}
+@media screen and (max-width:620px){
+    .main_container{
+        .Skills{
+            .Skills_container{
+                .Description{
+                    width: 400px;
+                    .Border_left{
+                        width: 475px;
+                    }
+                    .Border_Right{
+                        width: 475px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:520px){
+    .main_container{
+        height: 2200px;
+        .Skills{
+            .Skills_container{
+                .Description{
+                    width: 350px;
+                    p{
+                        font-size: 17px;
+                    }
+                    .Border_left{
+                        width: 425px;
+                    }
+                    .Border_Right{
+                        width: 425px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:460px){
+    .main_container{
+        .Skills{
+            .Skills_container{
+                .Description{
+                    width: 300px;
+                    p{
+                        font-size: 17px;
+                    }
+                    .Border_left{
+                        width: 370px;
+                    }
+                    .Border_Right{
+                        width: 370px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:380px){
+    .main_container{
+        .Skills{
+            .Skills_container{
+                .Description{
+                    width: 290px;
+                    p{
+                        font-size: 17px;
+                    }
+                    .Border_left{
+                        width: 350px;
+                    }
+                    .Border_Right{
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+

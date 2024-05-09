@@ -1,0 +1,123 @@
+// || Colors
+$backgroundColor: #191E21;
+$fontColor:#E3D5BB ;
+$additionColor: #af2523;
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .Logo{
+        a{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .Logo_Text{
+                display: flex;
+                gap: 5px;
+                p{
+                    font-size: 25px;
+                }
+                p:nth-child(1){
+                    height: 40px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: end;
+                    color: white;
+                }
+                p:nth-child(2){
+                    color: aqua;
+                }
+            }
+        }
+    }
+    .Routes{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        a{
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            display: flex;
+            gap: 3px;
+            i{
+                color: aqua;
+            }
+        }
+        a:hover{
+            color: aqua;
+            i{
+                color: white;
+            }
+        }
+        .RouterIsActive{
+            color: aqua;
+            i{
+                color: white;
+            }
+        }
+    }
+    .BurgerMenu{
+        display: none;
+        i{
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+.Responsive_Menu{
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    background-color: $backgroundColor;
+    transform: translateY(-100px);
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+    .close{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        p{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    .Routes{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        a{
+            font-size: 40px;
+            color: white;
+            i{
+                color: aqua;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    nav{
+        .Routes{
+            display: none;
+        }
+        .BurgerMenu{
+            display: block;
+        }
+    }
+    .Responisve_MenuOpen{
+        display: flex;
+    }
+}

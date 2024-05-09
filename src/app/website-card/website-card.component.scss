@@ -1,0 +1,99 @@
+.card_container{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation-name: LeftAnimation;
+    animation-duration: 0.3s;
+    .image{
+        img{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+    }
+    .buttons_title{
+        position: absolute;
+        width: 400px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.568);
+        border-radius: 10px;
+        transform: translateY(-2px);
+        transition: 0.3s;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .title{
+            p{
+                color: aqua;
+                font-weight: bold;
+                font-size: 30px;
+            }
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+            i{
+                color: white;
+                font-size: 30px;
+            }
+            i:hover{
+                color: aqua;
+            }
+        }
+    }
+}
+.card_container:hover{
+    .image{
+        img{
+            width: 410px;
+            height: 210px;
+        }
+    }
+    .buttons_title{
+        display: flex;
+        width: 410px;
+        height: 210px;
+    }
+}
+
+@keyframes LeftAnimation{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+@media screen and (max-width:470px){
+    .card_container{
+        width: 300px;
+        height: 150px;
+        .image{
+            img{
+                width: 300px;
+                height: 150px;
+            }
+        }
+    }
+    .card_container:hover{
+        .image{
+            img{
+                width: 310px;
+                height: 160px;
+            }
+        }
+        .buttons_title{
+            width: 310px;
+            height: 160px;
+        }
+    }
+}

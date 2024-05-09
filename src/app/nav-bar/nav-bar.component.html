@@ -1,0 +1,27 @@
+<nav>
+    <div class="Logo">
+        <a>
+            <div class="Logo_Text">
+                <p>MY</p>
+                <p>PORTFOLIO</p>
+            </div>
+        </a>     
+    </div>
+    <div class="Routes">
+        <a routerLink="" [routerLinkActive]="'RouterIsActive'" [routerLinkActiveOptions]="{exact:true}"><i class="fa-solid fa-angle-left"></i>ABOUT ME<i class="fa-solid fa-angle-right"></i></a>
+        <a routerLink="Mywebsites" [routerLinkActive]="'RouterIsActive'"><i class="fa-solid fa-angle-left"></i>MY WEBSITES<i class="fa-solid fa-angle-right"></i></a>
+    </div>
+    <div class="BurgerMenu">
+        <i class="fa-solid fa-bars" (click)="RespMenuOpen()"></i>
+    </div>
+</nav>
+<div class="Responsive_Menu" [class.Responisve_MenuOpen]="ResponsiveMenuOpenClose">
+    <div class="close">
+        <p (click)="RespMenuClose()">x</p>
+    </div>
+    <div class="Routes">
+        <a routerLink="" (click)="RespMenuClose()"><i class="fa-solid fa-angle-left"></i>ABOUT ME<i class="fa-solid fa-angle-right"></i></a>
+        <a routerLink="Mywebsites" (click)="RespMenuClose()"><i class="fa-solid fa-angle-left"></i>MY WEBSITES<i class="fa-solid fa-angle-right"></i></a>
+    </div>
+</div>
+
