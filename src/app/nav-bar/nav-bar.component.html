@@ -1,6 +1,6 @@
 <nav>
     <div class="Logo">
-        <a>
+        <a routerLink="">
             <div class="Logo_Text">
                 <p>MY</p>
                 <p>PORTFOLIO</p>
@@ -8,7 +8,9 @@
         </a>     
     </div>
     <div class="Routes">
-        <a routerLink="" [routerLinkActive]="'RouterIsActive'" [routerLinkActiveOptions]="{exact:true}"><i class="fa-solid fa-angle-left"></i>ABOUT ME<i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" pageScroll href="#aboutMe" ><i class="fa-solid fa-angle-left"></i>ABOUT ME<i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" pageScrool href="#stack_content"><i class="fa-solid fa-angle-left"></i>STACK<i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" pageScrool href="#contact_content"><i class="fa-solid fa-angle-left"></i>CONTACT<i class="fa-solid fa-angle-right"></i></a>
         <a routerLink="Mywebsites" [routerLinkActive]="'RouterIsActive'"><i class="fa-solid fa-angle-left"></i>MY WEBSITES<i class="fa-solid fa-angle-right"></i></a>
     </div>
     <div class="BurgerMenu">
@@ -20,7 +22,9 @@
         <p (click)="RespMenuClose()">x</p>
     </div>
     <div class="Routes">
-        <a routerLink="" (click)="RespMenuClose()"><i class="fa-solid fa-angle-left"></i>ABOUT ME<i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" pageScroll href="#aboutMe"  (click)="RespMenuClose()"><i class="fa-solid fa-angle-left"></i>ABOUT ME<i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" pageScrool href="#stack_content"  (click)="RespMenuClose()"><i class="fa-solid fa-angle-left"></i>STACK<i class="fa-solid fa-angle-right"></i></a>
+        <a href="#" pageScrool href="#contact_content"  (click)="RespMenuClose()"><i class="fa-solid fa-angle-left"></i>CONTACT<i class="fa-solid fa-angle-right"></i></a>
         <a routerLink="Mywebsites" (click)="RespMenuClose()"><i class="fa-solid fa-angle-left"></i>MY WEBSITES<i class="fa-solid fa-angle-right"></i></a>
     </div>
 </div>

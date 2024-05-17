@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FirstContentComponent } from './first-content/first-content.component';
 import { ContactContentComponent } from './contact-content/contact-content.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPageScrollCoreModule.forRoot({duration:1000})
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class FirstContentComponent {
 // ~ Text Typing Logic
-textToType: string = "Junr Front-End";
+textToType: string = "Junior Front-End";
 typedText: string = "";
 currentIndex: number = 0;
 typingSpeed: number = 150;
