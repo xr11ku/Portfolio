@@ -6,54 +6,68 @@ $additionColor: #af2523;
 // || About Me Main Container Styles
 .main_container{
     width: 100%;
-    height: 900px;
-    background-color: $backgroundColor;
+    height: 950px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    .Title{
-        border-bottom: 5px solid aqua;
-        border-radius: 0px 10px;
-        p{
-            color: white;
-            font-size: 50px;
-            font-weight: bold;
-        }
+    .background_image{
+        width: 100%;
+        height: 950px;
+        background-color: #272c2e;
     }
-    .Image_Description{
+    .components{
+        width: 100%;
+        height: 900px;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 50px;
-        .Image{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img{
-                width: 600px;
-                animation-name: LeftAnimation;
-                animation-duration: 0.3s;
-            }
-        }
-        .Description{
-            width: 800px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px;
-            animation-name: RightAnimation;
-            animation-duration: 0.3s;
+        gap: 100px;
+        position: absolute;
+        .Title{
+            border-bottom: 5px solid aqua;
+            border-radius: 0px 10px;
             p{
                 color: white;
-                font-size: 18px;
-                i{
-                    color: aqua;
+                font-size: 50px;
+                font-weight: bold;
+            }
+        }
+        .Image_Description{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            .Image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 600px;
+                    animation-name: LeftAnimation;
+                    animation-duration: 0.3s;
+                }
+            }
+            .Description{
+                width: 800px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                animation-name: RightAnimation;
+                animation-duration: 0.3s;
+                p{
+                    color: white;
+                    font-size: 18px;
+                    i{
+                        color: aqua;
+                    }
                 }
             }
         }
     }
-}
+}      
 
 @keyframes LeftAnimation{
     from{
@@ -76,28 +90,37 @@ $additionColor: #af2523;
 @media screen and (max-width:1460px){
     .main_container{
         height: 1200px;
-        .Image_Description{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        .background_image{
+            height: 1200px;
+        }
+        .components{
+            .Image_Description{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
         }
     }
 }
 @media screen and (max-width:860px){
     .main_container{
-        .Image_Description{
-            .Description{
-                width: 500px;
+        .components{
+            .Image_Description{
+                .Description{
+                    width: 500px;
+                }
             }
         }
     }
 }
 @media screen and (max-width:615px){
     .main_container{
-        .Image_Description{
-            .Image{
-                img{
-                    width: 500px;
+        .components{
+            .Image_Description{
+                .Image{
+                    img{
+                        width: 500px;
+                    }
                 }
             }
         }
@@ -105,14 +128,16 @@ $additionColor: #af2523;
 }
 @media screen and (max-width:520px){
     .main_container{
-        .Image_Description{
-            .Image{
-                img{
+        .components{
+            .Image_Description{
+                .Image{
+                    img{
+                        width: 300px;
+                    }
+                }
+                .Description{
                     width: 300px;
                 }
-            }
-            .Description{
-                width: 300px;
             }
         }
     }
