@@ -16,6 +16,7 @@ import { AboutMeComponent } from './mainPage//about-me/about-me.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { MainPageWebsiteContentComponent } from './mainPage/main-page-website-content/main-page-website-content.component';
 import { MainPageWebsiteCardComponent } from './mainPage/main-page-website-card/main-page-website-card.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 
 @NgModule({
@@ -33,11 +34,12 @@ import { MainPageWebsiteCardComponent } from './mainPage/main-page-website-card/
     AboutMeComponent,
     MainPageWebsiteContentComponent,
     MainPageWebsiteCardComponent,
+    ErrorPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxPageScrollCoreModule.forRoot({duration:1000}),
+    NgxPageScrollCoreModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
