@@ -3,17 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WebsitePageComponent } from './website-page/website-page.component';
-import { WebsiteCardComponent } from './website-card/website-card.component';
-import { StackContentComponent } from './stack-content/stack-content.component';
-import { StackCardComponent } from './stack-card/stack-card.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { MainPageComponent } from './main-page/main-page.component';
-import { FooterComponent } from './footer/footer.component';
-import { FirstContentComponent } from './first-content/first-content.component';
-import { ContactContentComponent } from './contact-content/contact-content.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { WebsitePageComponent } from './websitePage//website-page/website-page.component';
+import { WebsiteCardComponent } from './websitePage//website-card/website-card.component';
+import { StackContentComponent } from './mainPage//stack-content/stack-content.component';
+import { StackCardComponent } from './mainPage//stack-card/stack-card.component';
+import { NavBarComponent } from './allComponents/nav-bar/nav-bar.component';
+import { MainPageComponent } from './mainPage//main-page/main-page.component';
+import { FooterComponent } from './allComponents/footer/footer.component';
+import { FirstContentComponent } from './mainPage//first-content/first-content.component';
+import { ContactContentComponent } from './mainPage//contact-content/contact-content.component';
+import { AboutMeComponent } from './mainPage//about-me/about-me.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { MainPageWebsiteContentComponent } from './mainPage/main-page-website-content/main-page-website-content.component';
+import { MainPageWebsiteCardComponent } from './mainPage/main-page-website-card/main-page-website-card.component';
+
 
 @NgModule({
   declarations: [
@@ -27,12 +30,14 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     FooterComponent,
     FirstContentComponent,
     ContactContentComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    MainPageWebsiteContentComponent,
+    MainPageWebsiteCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxPageScrollCoreModule.forRoot({duration:1000})
+    NgxPageScrollCoreModule.forRoot({duration:1000}),
   ],
   providers: [],
   bootstrap: [AppComponent]

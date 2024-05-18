@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Input } from '@angular/core';
-import { Istack } from '../interfaces/stack.model';
+import { Istack } from '../../interfaces/stack.model';
 
 @Component({
   selector: 'app-stack-card',

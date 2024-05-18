@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Istack } from '../interfaces/stack.model';
-@Component({
-  selector: 'app-stack-content',
-  templateUrl: './stack-content.component.html',
-  styleUrl: './stack-content.component.scss'
+@Injectable({
+  providedIn: 'root'
 })
-export class StackContentComponent {
+export class StackService {
+
   stack:Istack[] =[
     {
       title:"Html/Css",
@@ -28,4 +27,6 @@ export class StackContentComponent {
       procent:40,
     }
   ]
+
+  
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Input } from '@angular/core';
-import { Iwebsites } from '../interfaces/websites.model';
+import { Iwebsites } from '../../interfaces/websites.model';
 @Component({
   selector: 'app-website-card',
   templateUrl: './website-card.component.html',

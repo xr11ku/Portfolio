@@ -1,0 +1,26 @@
+<div class="main_container">
+    <div class="Title">
+        <p>MY WEBSITES</p>
+    </div>
+    <div class="card_container">
+        <ng-container *ngFor="let web of mainWebsites" >
+            <div class="card">
+                <div class="image">
+                    <img [src]="web.img" alt="">
+                </div>
+                <div class="buttons_title">
+                    <div class="title">
+                        <p>{{web.title}}</p>
+                    </div>
+                    <div class="buttons">
+                        <a [href]="web.gitReq" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a [href]="web.liveLink" target="_blank"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    <div class="viweMore_container">
+        <a routerLink="Mywebsites">Viwe More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</div>
