@@ -17,6 +17,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { MainPageWebsiteContentComponent } from './mainPage/main-page-website-content/main-page-website-content.component';
 import { MainPageWebsiteCardComponent } from './mainPage/main-page-website-card/main-page-website-card.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { AnimationPageComponent } from './mainPage/animation-page/animation-page.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     MainPageWebsiteContentComponent,
     MainPageWebsiteCardComponent,
     ErrorPageComponent,
+    AnimationPageComponent
   ],
   imports: [
     BrowserModule,

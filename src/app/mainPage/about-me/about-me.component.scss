@@ -32,7 +32,7 @@ $additionColor: #af2523;
             p{
                 color: white;
                 font-size: 50px;
-                font-family: "Bubblegum Sans", sans-serif;
+                font-family: "Poetsen One", sans-serif;
             }
         }
         .Image_Description{
@@ -60,6 +60,7 @@ $additionColor: #af2523;
                 p{
                     color: white;
                     font-size: 18px;
+                    font-family: "Averia Sans Libre", sans-serif;
                     i{
                         color: aqua;
                     }
@@ -89,6 +90,7 @@ $additionColor: #af2523;
     }
 }      
 
+// || about page animations
 @keyframes LeftAnimation{
     from{
         transform: translateX(-1000px);
@@ -107,6 +109,7 @@ $additionColor: #af2523;
 }
 
 
+// || about page responsive 
 @media screen and (max-width:1460px){
     .main_container{
         height: 1200px;

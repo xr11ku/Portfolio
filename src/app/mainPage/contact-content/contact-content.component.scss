@@ -17,7 +17,7 @@ $additionColor: #af2523;
         border-radius: 0px 10px;
         p{
             font-size: 50px;
-            font-family: "Bubblegum Sans", sans-serif;
+            font-family: "Poetsen One", sans-serif;
             color: white;
         }
     }
@@ -35,8 +35,11 @@ $additionColor: #af2523;
             animation-duration: 0.3s;
             .text{
                 color: white;
-                i{
-                    color: aqua;
+                p{
+                    font-family: "Averia Sans Libre", sans-serif;
+                    i{
+                        color: aqua;
+                    }
                 }
             }
             .icons{
