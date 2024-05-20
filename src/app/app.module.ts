@@ -18,6 +18,8 @@ import { MainPageWebsiteContentComponent } from './mainPage/main-page-website-co
 import { MainPageWebsiteCardComponent } from './mainPage/main-page-website-card/main-page-website-card.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { AnimationPageComponent } from './mainPage/animation-page/animation-page.component';
+import { StackPageComponent } from './stackPage/stack-page/stack-page.component';
+import { StackPageCardComponent } from './stackPage/stack-page-card/stack-page-card.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { AnimationPageComponent } from './mainPage/animation-page/animation-page
     MainPageWebsiteContentComponent,
     MainPageWebsiteCardComponent,
     ErrorPageComponent,
-    AnimationPageComponent
+    AnimationPageComponent,
+    StackPageComponent,
+    StackPageCardComponent
   ],
   imports: [
     BrowserModule,
