@@ -12,6 +12,7 @@ $additionColor: #af2523;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    z-index: 10;
     .title{
         border-bottom: 5px solid aqua;
         border-radius: 0px 10px;
@@ -22,7 +23,7 @@ $additionColor: #af2523;
         }
     }
     .description_contact{
-        display: flex;
+        display: none;
         gap: 100px;
         .description{
             width: 600px;
@@ -84,6 +85,9 @@ $additionColor: #af2523;
                 }
             }
         }
+    }
+    .Animation_active{
+        display: flex;
     }
 }
 

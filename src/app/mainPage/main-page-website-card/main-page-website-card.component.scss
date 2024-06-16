@@ -3,14 +3,21 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    z-index: 10;
     .Title{
         border-bottom: 5px solid aqua;
         border-radius: 0px 10px;
+        display: none;
+        animation-name: LeftAnimation;
+        animation-duration: 0.3s;
         p{
             color: white;
             font-size: 50px;
             font-family: "Poetsen One", sans-serif;
         }
+    }
+    .Title_AnimationShow{
+        display: block;
     }
     .card_container{
         display: flex;
@@ -21,7 +28,7 @@
         .card{
             width: 400px;
             height: 200px;
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             cursor: pointer;
@@ -69,6 +76,9 @@
                 }
             }
         }
+        .cardShowAnimation{
+            display: flex;
+        }
         .card:hover{
             .image{
                 img{
@@ -85,8 +95,10 @@
     }
     .viweMore_container{
         width: 80%;
-        display: flex;
+        display: none;
         justify-content: end;
+        animation-name: LeftAnimation;
+        animation-duration: 0.3s;
         a{
             font-size: 25px;
             font-family: "Averia Sans Libre", sans-serif;
@@ -95,6 +107,9 @@
         a:hover{
             color: aqua;
         }
+    }
+    .viweMore_animationShow{
+        display: flex;
     }
 }
 

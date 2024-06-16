@@ -1,10 +1,10 @@
 <div class="main_container">
-    <div class="Title">
+    <div class="Title" [class.Title_AnimationShow]="myWebsites">
         <p>MY WEBSITES</p>
     </div>
     <div class="card_container">
         <ng-container *ngFor="let web of mainWebsites" >
-            <div class="card">
+            <div class="card" [class.cardShowAnimation]="myWebsites">
                 <div class="image">
                     <img [src]="web.img" alt="">
                 </div>
@@ -20,7 +20,7 @@
             </div>
         </ng-container>
     </div>
-    <div class="viweMore_container">
+    <div class="viweMore_container" [class.viweMore_animationShow]="myWebsites">
         <a routerLink="Mywebsites">Viwe More <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 </div>

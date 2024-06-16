@@ -1,4 +1,7 @@
 export interface Istack {
     title:string;
-    procent:number;
+    img:string;
+    img2:string;
+    img2True:boolean
 }
+

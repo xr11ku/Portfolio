@@ -16,16 +16,22 @@ $additionColor: #af2523;
     .title{
         border-bottom: 5px solid aqua;
         border-radius: 0px 10px;
+        display: none;
+        animation-name: LeftAnimation;
+        animation-duration: 0.3s;
         p{
             font-size: 50px;
             font-family: "Poetsen One", sans-serif;
             color: white;
         }
     }
+    .title_AnimationShow{
+        display: flex;
+    }
     .Skills{
         width: 100%;
         height: auto;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         animation-name: LeftAnimation;
@@ -47,7 +53,7 @@ $additionColor: #af2523;
                     color: white;
                     font-size: 20px;
                     font-family: "Averia Sans Libre", sans-serif;
-                    z-index: 12;
+                    z-index: 10;
                     i{
                         color: aqua;
                     }
@@ -95,12 +101,17 @@ $additionColor: #af2523;
             }
         }
     }
+    .skillS_AnimationShow{
+        display: flex;
+    }
     .viwe_more{
         width: 65%;
         height: 20px;
         display: flex;
         justify-content: end;
         align-items: center;
+        animation-name: LeftAnimation;
+        animation-duration: 0.3s;
         a{
             font-size: 25px;
             font-family: "Averia Sans Libre", sans-serif;
@@ -109,6 +120,9 @@ $additionColor: #af2523;
         a:hover{
             color: aqua;
         }
+    }
+    .viweMore_AnimationShow{
+        display: flex;
     }
 }
 @keyframes LeftAnimation{
@@ -140,9 +154,14 @@ $additionColor: #af2523;
         }
     }
 }
+@media screen and (max-width:1285px){
+    .main_container{
+        height: 1400px;
+    }
+}
 @media screen and (max-width:1010px){
     .main_container{
-        height: auto;
+        height: 1500px;
         .Skills{
             .Skills_container{
                 .Description{

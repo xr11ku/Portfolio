@@ -3,20 +3,12 @@
         <p>{{stack.title}}</p>
     </div>
     <div class="EducationProcents">
-        <div class="boxs">
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
-            <div class="box" [class.boxsFortin]="Fortin" [class.boxsFifty]="Fifty" [class.boxsSeventin]="Seventin" [class.boxsEitin]="Eitin"></div>
+        <div class="boxs" *ngIf="stack.img2True === false">
+            <img [src]="stack.img" alt="">
         </div>
-        <div class="procent">
-            <p>{{stack.procent}}%</p>
+        <div class="boxs2" *ngIf="stack.img2True === true">
+            <img [src]="stack.img" alt="">
+            <img [src]="stack.img2" alt="">
         </div>
     </div>
 </div>

@@ -3,6 +3,7 @@
     height: 300px;
     border: 3px solid white;
     border-radius: 10px;
+    cursor: pointer;
     .title{
         width: 100%;
         height: 50px;
@@ -23,39 +24,43 @@
         align-items: center;
         gap: 10px;
         .boxs{
-            display: flex;
-            gap: 5px;
-            .box{
-                width: 15px;
-                height: 50px;
-                border: 1px solid white;
-            }
-            .boxsFortin:nth-child(-n+4){
-                background-color: aqua;
-            }
-            .boxsFifty:nth-child(-n+5){
-                background-color: aqua;
-            }
-            .boxsSeventin:nth-child(-n+7){
-                background-color: aqua;
-            }
-            .boxsEitin:nth-child(-n+8){
-                background-color: aqua;
+            img{
+                width: 150px;
+                filter: contrast(0.5);
+                transition: 0.5s;
             }
         }
-        .procent{
-            width: 220px;
+        .boxs2{
             display: flex;
-            justify-content: end;
-            p{
-                font-size: 18px;
-                font-family: "Caveat Brush", cursive;
-                color: white;
+            gap: 10px;
+            img{
+                width: 120px;
+                filter: contrast(0.5);
+                transition: 0.5s;
             }
         }
     }
 }
-
+.main_container:hover{
+    border-color: aqua;
+    .title{
+        p{
+            color: white;
+        }
+    }
+    .EducationProcents{
+        .boxs{
+            img{
+                filter: none;
+            }
+        }
+        .boxs2{
+            img{
+                filter: none;
+            }
+        }
+    }
+}
 @media screen and (max-width:1318px){
     .main_container{
         .title{

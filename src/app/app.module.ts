@@ -46,6 +46,7 @@ import { StackPageCardComponent } from './stackPage/stack-page-card/stack-page-c
     BrowserModule,
     AppRoutingModule,
     NgxPageScrollCoreModule.forRoot(),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

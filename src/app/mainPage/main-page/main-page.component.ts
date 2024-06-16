@@ -8,12 +8,12 @@ import { WebsitesService } from '../../service/websites.service';
 })
 export class MainPageComponent {
 
-  websites:Iwebsites[] =[]
+  websites:Iwebsites[] = []
 
   constructor(private _webService:WebsitesService){}
 
-  ngOnInit():void{
+  ngOnInit():void {
     this.websites = this._webService.websites
-  }
 
+  }
 }

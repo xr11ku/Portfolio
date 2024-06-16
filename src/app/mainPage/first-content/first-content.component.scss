@@ -9,6 +9,7 @@ $additionColor: #af2523;
     height: 100dvh;
     background-color: $backgroundColor;
     display: flex;
+    justify-content: center;
     gap: 100px;
     p{
         color: white;
@@ -81,6 +82,7 @@ $additionColor: #af2523;
                 font-weight: bold;
                 font-size: 100px;
                 color: aqua;
+                cursor: pointer;
             }
         }
     }

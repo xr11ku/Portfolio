@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Istack } from '../interfaces/stack.model';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -8,25 +9,38 @@ export class StackService {
   stack:Istack[] =[
     {
       title:"Html/Css",
-      procent:80,
+      img:"assets/images/icons/html.png",
+      img2:"assets/images/icons/css.png",
+      img2True:true
     },
     {
       title:"Bootstrap",
-      procent:70,
+      img:"assets/images/icons/bootstrap.png",
+      img2:"",
+      img2True:false
     },
     {
       title:"JavaScript",
-      procent:50,
+      img:"assets/images/icons/js.png",
+      img2:"",
+      img2True:false
     },
     {
       title:"TypeScript",
-      procent:50,
+      img:"assets/images/icons/typescript.png",
+      img2:"",
+      img2True:false
     },
     {
       title:"Angular",
-      procent:40,
+      img:"assets/images/icons/angular.png",
+      img2:"",
+      img2True:false
     }
   ]
+  
+
+  
 
   
   

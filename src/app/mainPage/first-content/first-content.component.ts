@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-first-content',
@@ -43,4 +43,14 @@ typeTextDeveloper(){
   this.currentIndexDeveloper ++;
   setTimeout(() => this.typeTextDeveloper(),this.typingSpeedDeveloper)
 }
+
+@HostListener('window:scroll', [])
+onWindowScroll():void{
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+}
+
+scrollAboutMe(){
+  window.scrollTo({top:900})
+}
+
 }

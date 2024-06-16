@@ -1,8 +1,8 @@
 <div class="main_container" id="stack_content">
-    <div class="title">
+    <div class="title" [class.title_AnimationShow]="stackScroll">
         <p>Stack</p>
     </div>
-    <div class="Skills">
+    <div class="Skills" [class.skillS_AnimationShow]="stackScroll">
         <div class="Skills_container">
             <div class="Description">
                 <p>
@@ -24,7 +24,7 @@
                 ></app-stack-card>
         </div>
     </div>
-    <div class="viwe_more">
+    <div class="viwe_more" [class.viweMore_AnimationShow]="stackScroll">
         <a routerLink="stackPage">Viwe More <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 </div>

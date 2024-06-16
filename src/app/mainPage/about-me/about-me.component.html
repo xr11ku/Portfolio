@@ -6,16 +6,16 @@
     </div>
     <!-- [ about page components -->
     <div class="components">
-        <div class="Title">
+        <div class="Title" [class.TitleShow]="AboutMeScroll">
             <p>About me</p>
         </div>
         <div class="Image_Description">
             <!-- [ abaout page my image -->
-            <div class="Image">
-                <img src="assets/images/myImages/MyImageBorder.jpg" alt="">
+            <div class="Image" [class.Animation]="AboutMeScroll">
+                <img src="assets/images/myImages/MyImageBorder.jpg" alt="" >
             </div>
             <!-- [ about page description  -->
-            <div class="Description">
+            <div class="Description" [class.Animation]="AboutMeScroll">
                 <p>
                     <i class="fa-solid fa-angle-left"></i>
                     Hello, my name is Beqa. 
