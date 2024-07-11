@@ -20,8 +20,6 @@ export class MainPageWebsiteCardComponent {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if(scrollPosition > 1350){
       this.myWebsites = true
-    } else if (scrollPosition < 1000){
-      this.myWebsites = false
-    }
+    } 
   }
 }

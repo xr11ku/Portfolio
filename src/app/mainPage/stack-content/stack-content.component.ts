@@ -22,8 +22,5 @@ export class StackContentComponent {
     if(scrollPosition > 2400){
       this.stackScroll = true
     }
-    else if(scrollPosition < 1900){
-      this.stackScroll = false
-    }
   }
 }

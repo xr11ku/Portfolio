@@ -137,6 +137,10 @@ $additionColor: #af2523;
 }
 @media screen and (max-width:860px){
     .main_container{
+        height: 1300px;
+        .background_image{
+            height: 1300px;
+        }
         .components{
             .Image_Description{
                 .Description{

@@ -16,8 +16,5 @@ export class ContactContentComponent {
     if(scrollPosition > 3400){
       this.contactScroll = true
     }
-    else if(scrollPosition < 3000){
-      this.contactScroll = false
-    }
   }
 }

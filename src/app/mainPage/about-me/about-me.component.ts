@@ -16,8 +16,6 @@ export class AboutMeComponent {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if(scrollPosition > 500){
       this.AboutMeScroll = true
-    } else if (scrollPosition < 200){
-      this.AboutMeScroll = false
     }
   }
 }
